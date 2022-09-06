@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@100&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Practice</title>
+</head>
+<body>
+        <div id="end">
+            <label for="timeAtRange">How much time do you spend at the range? (H:MM)</label>
+            <select name="timeAtRange" id="timeAtRange">
+                <option value="0.5">0:30</option>
+                <option value="1">1:00</option>
+                <option value="1.5">1:30</option>
+                <option value="2">2:00</option>
+                <option value="2.5">2:30</option>
+                <option value="3">3:00</option>
+                <option value="3.5">3:30</option>
+                <option value="4">4:00</option>
+            </select>
+            <button id="startRange">Start Range Session</button>
+        </div>
+        
+        <div id="results">
+            <ul>
+                <li id="teeShotTime">Tee Shots: <span id="teeShotSpan"></span></li>
+                <li id="approachShotTime">Approach Shots: <span id="approachShotSpan"></span></li>
+                <li id="shortGameTime">Short Game: <span id="shortGameSpan"></span></li>
+            </ul>
+            <button id="finalFinish" onClick="window.location.reload();">Finish</button>
+        </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

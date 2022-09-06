@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@100&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"
+        rel="stylesheet">
+    <title>RangeTime</title>
+</head>
+<body>
+<div id="roundType">
+    <h3>Round Type</h3>
+    <ul id="initiate">
+        <li>18 Holes</li>
+        <li class="half">Front 9</li>
+        <li class="start10 half">Back 9</li>
+    </ul>
+</div>
+
+<!-- QUESTIONNAIRE -->
+
+<div id="questionnaire">
+    <h3 id="title">Hole <span id="holeNum"></span></h3>
+
+    <ul id="par">
+        <li id="par3">Par 3</li>
+        <li id="par4">Par 4</li>
+        <li id="par5">Par 5</li>
+    </ul>
+
+    <div id="teeShot">
+        <h4>Tee Shot</h4>
+        <ul>
+            <li>Fairway</li>
+            <li id="missLeft">Miss Left</li>
+            <li id="missRight">Miss Right</li>
+        </ul>
+    </div>
+
+    <div id="gir">
+        <h4>Approach shot on Green?</h4>
+        <ul>
+            <li>Yes</li>
+            <li id="missGreen">No</li>
+        </ul>
+    </div>
+
+    <div id="shortGame">
+        <h4>Number of Chips and Putts combined</h4>
+        <ul>
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li id="badSG">3</li>
+            <li id="worstSG">4+</li>
+        </ul>
+    </div>
+
+    <div id="strokes">
+        <h4>Total Strokes</h4>
+        <input type="number" id="totStrokes">
+        <button id="nextHole">Next Hole</button>
+        <button id="finishRound">Finish Round</button> 
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
