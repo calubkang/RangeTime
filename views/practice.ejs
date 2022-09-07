@@ -13,6 +13,7 @@
     <title>Practice</title>
 </head>
 <body>
+    <h1>Practice</h1>
         <div id="end">
             <label for="timeAtRange">How much time do you spend at the range? (H:MM)</label>
             <select name="timeAtRange" id="timeAtRange">
@@ -30,12 +31,19 @@
         
         <div id="results">
             <ul>
-                <li id="teeShotTime">Tee Shots: <span id="teeShotSpan"></span></li>
-                <li id="approachShotTime">Approach Shots: <span id="approachShotSpan"></span></li>
-                <li id="shortGameTime">Short Game: <span id="shortGameSpan"></span></li>
+                <li id="teeShotTime">Tee Shots: <span id="teeShotSpan"><%=teeAverage%></span></li>
+                <li id="approachShotTime">Approach Shots: <span id="approachShotSpan"><%=approachAverage%></span></li>
+                <li id="shortGameTime">Short Game: <span id="shortGameSpan"><%=sgAverage%></span></li>
             </ul>
-            <button id="finalFinish" onClick="window.location.reload();">Finish</button>
+            <a href="/todos" id="finalFinish" onClick="window.location.reload();">Finish</a>
         </div>
-    <script src="js/main.js"></script>
+
+            <div id="currentTimer">
+                <h2><span id="typeOfPractice"></span></h2>
+                <div id="timer"></div>
+                <button id="finishTimer">Finish</button>
+            </div>
+
+    <script src="js/practice.js"></script>
 </body>
 </html>

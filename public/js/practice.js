@@ -8,6 +8,10 @@ const currentTimer = document.querySelector('#currentTimer');
 const finishTimer = document.querySelector('#finishTimer');
 const typeOfPractice = document.querySelector('#typeOfPractice');
 
+results.style.display = 'none';
+currentTimer.style.display = 'none';
+
+
 function minutesToHours(min) {
     let hours = Math.floor(min / 60);
     let mins = Math.round(min % 60);
@@ -22,15 +26,16 @@ let teeMinutes
 let approachMinutes
 let sgMinutes
 
+let teeScore = Number(document.querySelector('#teeShotSpan').innerHTML);
+let approachScore = Number(document.querySelector('#approachShotSpan').innerText);
+let sgScore = Number(document.querySelector('#shortGameSpan').innerText);
+
 const startRange = document.querySelector('#startRange');
 startRange.addEventListener('click', _ => {
     let sumOfAllScores = teeScore + approachScore + sgScore;
     let teeFraction = teeScore / sumOfAllScores;
     let approachFraction = approachScore / sumOfAllScores;
     let sgFraction = sgScore / sumOfAllScores;
-    console.log(
-        sumOfAllScores, teeFraction, approachFraction, sgFraction
-    )
 
     let timeAtRange = Number(document.querySelector('#timeAtRange').value);
 
