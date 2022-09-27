@@ -13,7 +13,7 @@ module.exports = {
                     sgAvg += score.sgScore/scores.length;
                 })
             } else {
-                for (let i = 0; i < 5; i++) {
+                for (let i = scores.length - 1; i > scores.length - 6; i--) {
                     teeAvg += scores[i].teeScore/5;
                     approachAvg += scores[i].approachScore/5;
                     sgAvg += scores[i].sgScore/5;

@@ -76,14 +76,15 @@ teeShotTime.addEventListener('click', _ => {
         TIME_LIMIT = Math.round(teeMinutes) * 60;
         timerInterval = 0;
         timePassed = 0
-        if (!teeShotFin && !approachShotFin && !shortGameFin) {
+        if (!teeShotFin) {
             startTimer()
         }
         teeShotFin = true;
         results.style.display = 'none';
         currentTimer.style.display = 'flex';
-        teeShotTime.style.backgroundColor = 'lightgreen'
-        document.querySelector('#teeShotSpan').innerText = '✅'
+        typeOfPractice.innerText = 'Tee Shots'
+        teeShotTime.style.backgroundColor = 'lightgrey'
+        
     }
 })
 
@@ -92,14 +93,14 @@ approachShotTime.addEventListener('click', _ => {
         timerInterval = 0;
         timePassed = 0
         TIME_LIMIT = Math.round(approachMinutes) * 60;
-        if (!teeShotFin && !approachShotFin && !shortGameFin) {
+        if (!approachShotFin) {
             startTimer()
         }
         approachShotFin = true
         results.style.display = 'none';
         currentTimer.style.display = 'flex';
-        approachShotTime.style.backgroundColor = 'lightgreen';
-        document.querySelector('#approachShotSpan').innerText = '✅'
+        typeOfPractice.innerText = 'Approach Shots'
+        approachShotTime.style.backgroundColor = 'lightgrey';
     }
 })
 
@@ -108,16 +109,15 @@ shortGameTime.addEventListener('click', _ => {
         timerInterval = 0;
         timePassed = 0
         TIME_LIMIT = Math.round(sgMinutes) * 60;
-        if (!teeShotFin && !approachShotFin && !shortGameFin) {
+        if (!shortGameFin) {
             startTimer()
         }
         shortGameFin = true
         results.style.display = 'none';
         currentTimer.style.display = 'flex';
+        typeOfPractice.innerText = 'Short Game'
 
-
-        shortGameTime.style.backgroundColor = 'lightgreen';
-        document.querySelector('#shortGameSpan').innerText = '✅'
+        shortGameTime.style.backgroundColor = 'lightgrey';
     }
 })
 

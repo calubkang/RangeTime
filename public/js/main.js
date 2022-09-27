@@ -69,15 +69,19 @@ for (let i = 0; i < half.length; i++) {
 // SELECTING PAR
 
 par3.addEventListener('click', _ => {
-    currPar = 3
+    currPar = 3;
+    title.style.borderRight = '5px solid rgb(190, 252, 164)';
+    title.style.borderBottom = '5px solid rgb(190, 252, 164)';
 })
 
 par4.addEventListener('click', _ => {
-    currPar = 4
+    currPar = 4;
+    title.style.borderRight = '5px solid rgb(190, 252, 164)';
 })
 
 par5.addEventListener('click', _ => {
-    currPar = 5
+    currPar = 5;
+    title.style.borderRight = '5px solid rgb(190, 252, 164)';
 })
 
 par.addEventListener('click', _ => {
@@ -92,6 +96,7 @@ par.addEventListener('click', _ => {
 // TEE SHOT
 missLeft.addEventListener('click', _ => {
     teeScore++;
+    
 })
 
 missRight.addEventListener('click', _ => {
@@ -101,6 +106,7 @@ missRight.addEventListener('click', _ => {
 teeShot.addEventListener('click', _ => {
     teeShot.style.display = 'none';
     gir.style.display = 'flex';
+    title.style.borderBottom = '5px solid rgb(190, 252, 164)';
 })
 
 // GREEN IN REGULATION
@@ -112,6 +118,7 @@ missGreen.addEventListener('click', _ => {
 gir.addEventListener('click', _ => {
     gir.style.display = 'none';
     shortGame.style.display = 'flex';
+    title.style.borderLeft = '5px solid rgb(190, 252, 164)';
 })
 
 // SHORT GAME
@@ -127,6 +134,7 @@ worstSG.addEventListener('click', _ => {
 shortGame.addEventListener('click', _ => {
     shortGame.style.display = 'none';
     strokes.style.display = 'flex';
+    title.style.borderTop = '5px solid rgb(190, 252, 164)';
     if (holesLeft > 1) {
         nextHole.style.display = 'flex';
     } else {
@@ -144,6 +152,7 @@ nextHole.addEventListener('click', _ => {
     strokes.style.display = 'none'
     nextHole.style.display = 'none'
     par.style.display = 'flex'
+    title.style.border = '5px solid rgb(192, 192, 192)';
     console.log(`Bad Tee Shots:${teeScore}
 Bad Approach Shots:${approachScore}
 Short Game Mistakes:${sgScore}

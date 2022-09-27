@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="roundType">
-    <h3>Round Type</h3>
+    <h3 class="bold-green">Round Type</h3>
     <ul id="initiate">
         <li>18 Holes</li>
         <li class="half">Front 9</li>
@@ -25,16 +25,19 @@
 <!-- QUESTIONNAIRE -->
 
 <div id="questionnaire">
-    <h3 id="title">Hole <span id="holeNum"></span></h3>
-
-    <ul id="par">
-        <li id="par3">Par 3</li>
-        <li id="par4">Par 4</li>
-        <li id="par5">Par 5</li>
-    </ul>
+    <h3 id="title"><span id="holeNum"></span></h3>
+    <div id="par">
+        <h4 class="bold-green">Par Value</h4>
+        <ul>
+            <li id="par3">Par 3</li>
+            <li id="par4">Par 4</li>
+            <li id="par5">Par 5</li>
+        </ul>
+    </div>
+    
 
     <div id="teeShot">
-        <h4>Tee Shot</h4>
+        <h4 class="bold-green">Tee Shot</h4>
         <ul>
             <li>Fairway</li>
             <li id="missLeft">Miss Left</li>
@@ -43,7 +46,7 @@
     </div>
 
     <div id="gir">
-        <h4>Approach shot on Green?</h4>
+        <h4 class="bold-green">Approach shot on Green?</h4>
         <ul>
             <li>Yes</li>
             <li id="missGreen">No</li>
@@ -51,7 +54,7 @@
     </div>
 
     <div id="shortGame">
-        <h4>Number of Chips and Putts combined</h4>
+        <h4 class="bold-green">Number of Chips and Putts combined</h4>
         <ul>
             <li>0</li>
             <li>1</li>
@@ -62,7 +65,7 @@
     </div>
 
     <div id="strokes">
-        <h4>Total Strokes</h4>
+        <h4 class="bold-green">Total Strokes</h4>
         <input type="number" id="totStrokes">
         <button id="nextHole">Next Hole</button>
         <a href="/todos" id="finishRound">Finish Round</a> 

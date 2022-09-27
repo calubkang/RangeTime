@@ -30,22 +30,51 @@
 
 img {  
     margin: 0;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
+  
+
+/* BODY */
 
 body {
-
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 label {
     margin-bottom: 20px;
+}
+
+#title {
+    position: fixed;
+    right: 15px;
+    bottom: 1px;
+    border: 5px solid rgb(192, 192, 192);
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#holeNum {
+    font-size: x-large;
+    font-weight: 800;
+    color: grey;
+    padding-top: 5px;
+}
+
+#svg-logo {
+    width: 70%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(62, 104, 102);
 }
 
 h1 {
@@ -55,10 +84,23 @@ h1 {
     border-bottom: 1px solid black;
 }
 
+.index-menu {
+    margin-top: 60%;
+}
+
+#logsign {
+    padding-top: 30px;
+}
+
+.underline h4 {
+    text-decoration: underline;
+}
+
 div div, div {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #questionnaire {
@@ -90,22 +132,69 @@ li {
 li {
     display: inline-block;
     padding: 5px 20px;
-    border: 1px solid black;
     margin: 5px;
     border-radius: 30px;
+    background-color: rgb(168, 222, 210);
+    color: white;
+}
+
+select {
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 a {
     text-decoration: none;
 }
 
+.bold-green {
+    font-size: large;
+    font-weight: 600;
+    color: rgb(62, 104, 102);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+input:last-child, input:first-child {
+    margin-top: 10px;
+}
+
+input:last-child {
+    border-radius: 30px;
+    background-color: rgb(168, 222, 210);
+    color: white;
+    padding: 5px 20px;
+}
+
+input:last-child:hover {
+    cursor: pointer;
+    background-color: rgb(111, 148, 146);
+}
+
 button, a{
     display: flex;
-    margin: 20px;
+    margin: 10px;
     border-radius: 30px;
     padding: 5px 20px;
     justify-content: center;
-    border: 1px solid black;
+    background-color: rgb(168, 222, 210);
+    color: white;
+    border: 0;
+}
+
+button:hover, a:hover {
+    background-color: rgb(111, 148, 146);
+
 }
 
 /* TIMER */
