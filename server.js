@@ -3,11 +3,6 @@ const app = express()
 const mongoose = require('mongoose')
 const passport = require('passport')
 const session = require('express-session')
-
-var favicon = require('serve-favicon')
-var path = require('path')
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
-
 const MongoStore = require('connect-mongo')(session)
 const flash = require('express-flash')
 const logger = require('morgan')
@@ -18,6 +13,7 @@ const roundRoutes = require('./routes/round')
 const practiceRoutes = require('./routes/practice')
 
 require('dotenv').config({path: './config/.env'})
+
 
 // Passport config
 require('./config/passport')(passport)
