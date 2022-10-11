@@ -31,7 +31,7 @@
 img {  
     margin: 0;
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -85,7 +85,7 @@ h1 {
 }
 
 .index-menu {
-    margin-top: 60%;
+    margin-top: 70%;
 }
 
 #logsign {
@@ -148,8 +148,8 @@ a {
 }
 
 .bold-green {
-    font-size: large;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 400;
     color: rgb(62, 104, 102);
 }
 
@@ -181,15 +181,31 @@ input:last-child:hover {
     background-color: rgb(111, 148, 146);
 }
 
-button, a{
+button, a, li{
     display: flex;
     margin: 10px;
     border-radius: 30px;
-    padding: 5px 20px;
+    width: 200px;
+    padding: 10px 0px;
     justify-content: center;
     background-color: rgb(168, 222, 210);
     color: white;
     border: 0;
+    font-size: 15px;
+}
+
+#finalFinish {
+  width: 100px;
+  margin-top: 60%;
+
+}
+
+#startRange {
+  margin-top: 50px;
+}
+
+#end {
+  margin-top: 30px;
 }
 
 button:hover, a:hover {
@@ -215,7 +231,7 @@ button:hover, a:hover {
 /* The SVG path that displays the timer's progress */
 .base-timer__path-elapsed {
     stroke-width: 7px;
-    stroke: grey;
+    stroke: rgb(202, 202, 202);
 }
 
 .base-timer__label {
@@ -259,6 +275,10 @@ button:hover, a:hover {
 .base-timer__svg {
     /* Flips the svg and makes the animation to move left-to-right */
     transform: scaleX(-1);
+}
+
+.green {
+  color: rgb(80, 130, 130);
 }
 
 /* Finished Training */

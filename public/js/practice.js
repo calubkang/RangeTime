@@ -70,14 +70,15 @@ function startTimer() {
     }, 1000);
 }
 let teeShotFin, approachShotFin, shortGameFin = false
-
+let startedTimer =false
 teeShotTime.addEventListener('click', _ => {
     if (!teeShotFin) {
         TIME_LIMIT = Math.round(teeMinutes) * 60;
         timerInterval = 0;
         timePassed = 0
-        if (!teeShotFin) {
-            startTimer()
+        if(!startedTimer){
+          startTimer();
+          startedTimer = true
         }
         teeShotFin = true;
         results.style.display = 'none';
@@ -93,8 +94,9 @@ approachShotTime.addEventListener('click', _ => {
         timerInterval = 0;
         timePassed = 0
         TIME_LIMIT = Math.round(approachMinutes) * 60;
-        if (!approachShotFin) {
-            startTimer()
+        if (!startedTimer) {
+          startTimer();
+          startedTimer = true
         }
         approachShotFin = true
         results.style.display = 'none';
@@ -109,8 +111,9 @@ shortGameTime.addEventListener('click', _ => {
         timerInterval = 0;
         timePassed = 0
         TIME_LIMIT = Math.round(sgMinutes) * 60;
-        if (!shortGameFin) {
-            startTimer()
+        if (!startedTimer) {
+          startTimer();
+          startedTimer = true
         }
         shortGameFin = true
         results.style.display = 'none';

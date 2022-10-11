@@ -28,7 +28,7 @@
         <!---->
     </svg>
         <div id="end">
-            <label for="timeAtRange">How much time do you spend at the range? (H:MM)</label>
+            <label for="timeAtRange">Select your range time (H:MM)</label>
             <select name="timeAtRange" id="timeAtRange">
                 <option value="0.5">0:30</option>
                 <option value="1" selected>1:00</option>
@@ -44,9 +44,9 @@
         
         <div id="results">
             <ul>
-                <li id="teeShotTime">Tee Shots: <span id="teeShotSpan"><%=teeAverage%></span></li>
-                <li id="approachShotTime">Approach Shots: <span id="approachShotSpan"><%=approachAverage%></span></li>
-                <li id="shortGameTime">Short Game: <span id="shortGameSpan"><%=sgAverage%></span></li>
+                <li id="teeShotTime">Tee Shots:&nbsp;<span id="teeShotSpan"> <%=teeAverage%></span></li>
+                <li id="approachShotTime">Approach Shots:&nbsp;<span id="approachShotSpan"> <%=approachAverage%></span></li>
+                <li id="shortGameTime">Short Game:&nbsp;<span id="shortGameSpan"> <%=sgAverage%></span></li>
             </ul>
             <a href="/todos" id="finalFinish" onClick="window.location.reload();">Finish</a>
         </div>

@@ -153,10 +153,6 @@ nextHole.addEventListener('click', _ => {
     nextHole.style.display = 'none'
     par.style.display = 'flex'
     title.style.border = '5px solid rgb(192, 192, 192)';
-    console.log(`Bad Tee Shots:${teeScore}
-Bad Approach Shots:${approachScore}
-Short Game Mistakes:${sgScore}
-Strokes to Par:${toPar}`)
 })
 
 // RESULTS 
