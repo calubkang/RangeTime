@@ -148,7 +148,7 @@ a {
 }
 
 .bold-green {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     color: rgb(62, 104, 102);
 }
@@ -192,6 +192,13 @@ button, a, li{
     color: white;
     border: 0;
     font-size: 15px;
+}
+
+#exit{
+  width: 100px;
+  position: absolute;
+  bottom: 3%;
+  left: 7%;
 }
 
 #finalFinish {
