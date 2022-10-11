@@ -5,7 +5,7 @@ A full-stack web application that calculates your last 5 rounds of golf to give 
 
 **Link to project:** https://rangetime.herokuapp.com/
 
-![alt text](https://github.com/calubkang/RangeTime/blob/main/logo.png?raw=true)
+![alt text](https://github.com/calubkang/RangeTime/blob/main/public/img/logo.png?raw=true)
 
 ## How It's Made:
 
