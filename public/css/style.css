@@ -85,7 +85,7 @@ h1 {
 }
 
 .index-menu {
-    margin-top: 70%;
+    padding-top: 70%;
 }
 
 #logsign {
@@ -289,3 +289,9 @@ button:hover, a:hover {
 }
 
 /* Finished Training */
+
+@media (min-width:900px) {
+  .index-menu {
+      padding-top: 700px;
+    }
+}
