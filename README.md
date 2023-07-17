@@ -3,7 +3,7 @@
 # RangeTime
 A full-stack web application that calculates your last 5 rounds of golf to give you the best, customized way to spend time at the range.
 
-**Link to project:** https://rangetime.herokuapp.com/
+**Link to project:** https://range-time.onrender.com
 
 ![alt text](https://github.com/calubkang/RangeTime/blob/main/public/img/logo.png?raw=true)
 
